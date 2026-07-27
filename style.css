@@ -1,0 +1,451 @@
+/*=========================================
+GE GREEN INDIA PVT LTD
+Premium Real Estate Website
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7f8;
+    color:#333;
+    line-height:1.6;
+}
+
+/*================ HEADER ================*/
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 7%;
+    background:#fff;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+    z-index:999;
+}
+
+
+
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+    object-fit:contain;
+}
+
+.logo h1{
+    color:#0EA75A;
+    font-size:28px;
+    font-weight:700;
+    margin:0;
+}
+
+nav{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+nav a{
+    color:#333;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+nav a:hover,
+nav a.active{
+    color:#0EA75A;
+}
+
+.featured-properties{
+
+padding:80px 7%;
+background:#f7f8fa;
+
+}
+
+.section-title{
+
+text-align:center;
+margin-bottom:50px;
+
+}
+
+.section-title h2{
+
+font-size:42px;
+font-weight:700;
+color:#0b3d2e;
+
+}
+
+.section-title p{
+
+color:#777;
+font-size:18px;
+
+}
+
+.property-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:35px;
+
+}
+
+.property-card{
+
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+transition:.4s;
+
+}
+
+.property-card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.property-card img{
+
+width:100%;
+height:270px;
+object-fit:cover;
+transition:.5s;
+
+}
+
+.property-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+.property-content{
+
+padding:25px;
+
+}
+
+.property-content h3{
+
+font-size:26px;
+margin-bottom:10px;
+
+}
+
+.property-content p{
+
+color:#666;
+margin-bottom:20px;
+line-height:28px;
+
+}
+
+.btn{
+
+display:inline-block;
+padding:14px 35px;
+background:#0b3d2e;
+color:#fff;
+text-decoration:none;
+border-radius:40px;
+transition:.4s;
+
+}
+
+.btn:hover{
+
+background:#d4af37;
+
+}
+
+/*================ HERO ================*/
+
+.hero{
+    height:65vh;
+    min-height:550px;
+    background:url("../images/HERO.jpg") center center/cover no-repeat;
+    display:flex;
+    align-items:center;
+    padding:80px 8%;
+    position:relative;
+}
+
+.hero-content{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+    position:relative;
+    z-index:2;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(255,255,255,.18);
+}
+
+.hero-box{
+    position:relative;
+    z-index:2;
+    max-width:650px;
+}
+
+.hero-box h1{
+    font-size:60px;
+    color:#111;
+    margin-bottom:20px;
+}
+
+.hero-box p{
+    font-size:22px;
+    margin-bottom:30px;
+    color:#222;
+}
+
+
+/*================ SEARCH ================*/
+
+.search-box{
+    width:420px;
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+    position:relative;
+    z-index:1000;
+    overflow:visible;
+}
+
+.search-box h3{
+    color:#0EA75A;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.search-box select{
+    width:100%;
+    height:55px;
+    padding:0 15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+    background:#fff;
+    outline:none;
+}
+
+.search-box button{
+    width:100%;
+    height:55px;
+    background:#0EA75A;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.search-box button:hover{
+    background:#08864a;
+}
+
+/*================ FEATURES ================*/
+
+.features{
+    width:90%;
+    margin:80px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.feature-box{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.feature-box:hover{
+    transform:translateY(-10px);
+}
+
+.feature-box h2,
+.feature-box h3{
+    color:#0EA75A;
+    margin-bottom:15px;
+}
+
+.feature-box img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+/*================ PAGE BANNER ================*/
+
+.page-banner{
+    margin-top:90px;
+    background:#0EA75A;
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.page-banner h1{
+    font-size:42px;
+}
+
+/*================ ABOUT & CONTACT ================*/
+
+.about-company,
+.contact-section{
+    width:90%;
+    margin:auto;
+    padding:70px 0;
+}
+
+.contact-section form{
+    background:#fff;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.contact-section input,
+.contact-section textarea,
+.contact-section select{
+    width:100%;
+    padding:14px;
+    margin-bottom:18px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.contact-section button{
+    background:#0EA75A;
+    color:#fff;
+    border:none;
+    padding:14px 30px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/*================ FOOTER ================*/
+
+footer{
+    background:#222;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+/*================ ANIMATION ================*/
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.show{
+    animation:fadeUp .8s ease;
+}
+
+/*================ RESPONSIVE ================*/
+
+@media(max-width:991px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    justify-content:center;
+    margin-top:15px;
+}
+
+.hero{
+    padding:120px 30px;
+}
+
+.hero-box h1{
+    font-size:42px;
+}
+
+.search-box{
+    width:100%;
+    max-width:420px;
+    margin:auto;
+}
+
+.search-box select,
+.search-box button{
+    width:100%;
+}
+
+}
+
+@media(max-width:600px){
+
+.logo h1{
+    font-size:22px;
+}
+
+.hero-box h1{
+    font-size:32px;
+}
+
+.hero-box p{
+    font-size:18px;
+}
+
+.page-banner h1{
+    font-size:30px;
+}
+.hero-content{
+    flex-direction:column;
+    text-align:center;
+}
+
+}
